@@ -1,0 +1,328 @@
+@import url(bootstrap/bootstrap.css);
+@import url(fontawesome/font-awesome.css);
+html,
+body {
+  height: 100%;
+  font-size: 14px; }
+
+.wrapper {
+  padding-bottom: 240px;
+  position: relative;
+  min-height: 100%; }
+
+.color-orange {
+  color: #FF9900 !important; }
+
+.color-white {
+  color: #ffffff !important; }
+
+.color-red {
+  color: #ff0000 !important; }
+
+.color-green {
+  color: #006240 !important; }
+
+.color-blue {
+  color: #0000ff !important; }
+
+.color-gray {
+  color: #808080 !important; }
+
+.container_header {
+  background-color: #003333;
+  height: 50px;
+  display: flex;
+  align-items: center; }
+
+.header-live {
+  color: #FF9900;
+  border: 1px solid #FF9900;
+  padding: 3px 10px 5px;
+  transition: 0.5s;
+  line-height: 1;
+  font-size: 0.9rem; }
+  .header-live:hover {
+    border-radius: 5px;
+    text-decoration: none;
+    color: #FF9900; }
+
+.header-date {
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px; }
+
+.date-picker-wrap {
+  text-align: right; }
+
+.date-picker {
+  display: inline-flex;
+  color: #ffffff;
+  margin: 10px; }
+  .date-picker a.arrow {
+    color: #ffffff;
+    margin: 0 3px; }
+    .date-picker a.arrow i {
+      font-size: 1.8em; }
+  .date-picker a.date-picker-day {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin: 0 3px;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff; }
+    .date-picker a.date-picker-day.active {
+      border-bottom: 1px solid #FF9900; }
+
+.nav-day {
+  background-color: #FF9900;
+  text-align: center;
+  padding: 7px 0;
+  color: #333333;
+  position: relative; }
+  .nav-day .what-is-this {
+    border: 1px solid #797979;
+    padding: 0 5px;
+    border-radius: 5px;
+    position: absolute;
+    left: 10px;
+    top: -2px; }
+  .nav-day a {
+    color: #333333; }
+    .nav-day a.active {
+      color: #ffffff; }
+      .nav-day a.active:hover {
+        color: #ffffff; }
+    .nav-day a:hover {
+      color: #333333; }
+
+.search-wrapper {
+  padding: 10px 0; }
+  .search-wrapper .form-control {
+    display: inline-block; }
+  .search-wrapper button.submit {
+    background-color: #E4E4E4;
+    color: #000;
+    border: 1px solid #E4E4E4; }
+
+.refresh {
+  color: #FF9900;
+  display: inline-block;
+  margin: 10px 0; }
+  .refresh:hover {
+    color: #FF9900; }
+
+.table-title {
+  background-color: #003333;
+  color: #ffffff;
+  text-align: center;
+  padding: 6px 0; }
+  .table-title a {
+    color: #ffffff; }
+  .table-title h4 {
+    font-size: 1rem;
+    margin: 0; }
+
+.table-league .table-head {
+  padding: 6px 0;
+  font-weight: bold; }
+.table-league .item {
+  border-bottom: 1px solid #E4E4E4;
+  padding: 6px 0; }
+  .table-league .item a {
+    color: #333333; }
+    .table-league .item a:hover {
+      color: #333333; }
+  .table-league .item .ticket {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 2px 4px;
+    text-decoration: none;
+    border: none;
+    margin: 1px; }
+    .table-league .item .ticket.red {
+      background-color: #FF3900;
+      color: #ffffff; }
+    .table-league .item .ticket.yellow {
+      background-color: #FEDA3C;
+      color: #333333; }
+.table-league .label_link {
+  border-radius: 4px;
+  padding: 2px 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer; }
+  .table-league .label_link:hover {
+    background: transparent;
+    color: #290011; }
+  .table-league .label_link.orange {
+    background-color: #FF9900;
+    color: #ffffff; }
+
+.game-info-details {
+  margin-left: 8rem;
+  margin-bottom: 1rem; }
+
+.game .nav-pills .nav-link {
+  width: 20%;
+  text-align: center; }
+
+.categories-letter {
+  background-color: #d2d2d2;
+  padding: 5px 0; }
+
+.categories .item {
+  margin: 5px 0; }
+  .categories .item a {
+    color: #333333;
+    padding: 3px 0;
+    display: inline-block; }
+    .categories .item a:hover {
+      color: #333333; }
+
+.team a {
+  color: #212529; }
+
+.footer-wrap {
+  width: 100%;
+  height: 230px;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+.footer {
+  height: 80px;
+  background-color: #003333;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem; }
+
+.advertising-footer-wrap {
+  height: 150px;
+  display: block; }
+
+.advertising ins {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: red; }
+
+@media (min-width: 200px) {
+  .wrapper {
+    padding-bottom: 120px; }
+
+  .footer-wrap {
+    height: 110px; }
+    .footer-wrap .advertising-footer-wrap {
+      height: 30px; }
+      .footer-wrap .advertising-footer-wrap .advertising-footer {
+        height: 30px; }
+
+  .advertising {
+    height: 20px; } }
+@media (min-width: 576px) {
+  .wrapper {
+    padding-bottom: 130px; }
+
+  .footer-wrap {
+    height: 120px; }
+    .footer-wrap .advertising-footer-wrap {
+      height: 40px; }
+      .footer-wrap .advertising-footer-wrap .advertising-footer {
+        height: 40px; }
+
+  .advertising {
+    height: 30px; } }
+@media (min-width: 768px) {
+  .wrapper {
+    padding-bottom: 160px; }
+
+  .footer-wrap {
+    height: 150px; }
+    .footer-wrap .advertising-footer-wrap {
+      height: 70px; }
+      .footer-wrap .advertising-footer-wrap .advertising-footer {
+        height: 70px; }
+
+  .advertising {
+    height: 60px; } }
+@media (min-width: 992px) {
+  .wrapper {
+    padding-bottom: 180px; }
+
+  .footer-wrap {
+    height: 170px; }
+    .footer-wrap .advertising-footer-wrap {
+      height: 90px; }
+      .footer-wrap .advertising-footer-wrap .advertising-footer {
+        height: 90px; }
+
+  .advertising {
+    height: 80px; } }
+@media (min-width: 1200px) {
+  .wrapper {
+    padding-bottom: 200px; }
+
+  .footer-wrap {
+    height: 180px; }
+    .footer-wrap .advertising-footer-wrap {
+      height: 110px; }
+      .footer-wrap .advertising-footer-wrap .advertising-footer {
+        height: 110px; }
+
+  .advertising {
+    height: 100px; } }
+@media (max-width: 768px) {
+  html, body {
+    font-size: 12px; }
+
+  .container_header {
+    height: auto;
+    text-align: center; }
+
+  .date-picker-wrap {
+    text-align: center; }
+
+  .table-league {
+    font-size: 0.8rem; }
+    .table-league .item {
+      padding: 4px 0;
+      align-items: center; }
+      .table-league .item .ticket {
+        font-size: 0.7rem;
+        padding: 1px 2px; }
+
+  table.table tr td {
+    padding: 2px; }
+
+  .game-info-details {
+    margin-left: 0; }
+
+  .game .nav-pills .nav-link {
+    width: auto; }
+
+  .categories .item {
+    margin: 5px 0; }
+    .categories .item a {
+      padding: 5px 10px;
+      display: inline-block;
+      text-transform: uppercase; }
+      .categories .item a:hover {
+        color: #333333; }
+
+  .table-overflow {
+    overflow: scroll; }
+
+  .footer p {
+    font-size: 0.8rem; } }
+
+/*# sourceMappingURL=style.css.map */

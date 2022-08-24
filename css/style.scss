@@ -1,0 +1,438 @@
+@import url(bootstrap/bootstrap.css);
+@import url(fontawesome/font-awesome.css);
+
+//variables
+$colorWhite  : #ffffff;
+$colorGreen  : #006240;
+$colorRed    : #ff0000;
+$colorBlue   : #0000ff;
+$bgdWhite    : #fafafa;
+$colorGray   : #808080;
+$colorOrange : #FF9900;
+
+//common
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+}
+.wrapper {
+  padding-bottom: 240px;
+  position: relative;
+  min-height: 100%;
+}
+.color-orange {
+  color: $colorOrange !important;
+}
+.color-white {
+  color: $colorWhite !important;
+}
+.color-red{
+  color: $colorRed !important;
+}
+.color-green {
+  color: $colorGreen !important;
+}
+.color-blue {
+  color: $colorBlue !important;
+}
+.color-gray {
+  color: $colorGray !important;
+}
+
+
+
+//header
+.container_header {
+  background-color: #003333;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.navbar-brand {
+  img {
+    max-width: 200px;
+  }
+}
+.header-live {
+  color: $colorOrange;
+  border: 1px solid $colorOrange;
+  padding: 3px 10px 5px;
+  transition: 0.5s;
+  line-height: 1;
+  font-size: 0.9rem;
+  &:hover {
+    border-radius: 5px;
+    text-decoration: none;
+    color: $colorOrange;
+  }
+}
+.header-date {
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px;
+}
+.date-picker-wrap {
+  text-align: right;
+}
+.date-picker {
+  display: inline-flex;
+  color: #ffffff;
+  margin: 10px;
+  a.arrow {
+    color: #ffffff;
+    margin: 0 3px;
+    i{
+      font-size: 1.8em;
+    }
+  }
+  a.date-picker-day {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin: 0 3px;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    &.active {
+      border-bottom: 1px solid $colorOrange;
+    }
+  }
+}
+//navigation days
+.nav-day{
+  background-color: $colorOrange;
+  text-align: center;
+  padding: 7px 0;
+  color: #333333;
+  position: relative;
+  .what-is-this {
+    border: 1px solid #797979;
+    padding: 0 5px;
+    border-radius: 5px;
+    position: absolute;
+    left: 10px;
+    top: -2px;
+  }
+  a {
+    color: #333333;
+    &.active {
+      color: #ffffff;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+    &:hover {
+      color: #333333;
+    }
+  }
+}
+//search
+.search-wrapper {
+  padding: 10px 0;
+  .form-control {
+    display: inline-block;
+  }
+  button.submit {
+    background-color: #E4E4E4;
+    color: #000;
+    border: 1px solid #E4E4E4;
+  }
+}
+.refresh {
+  color: $colorOrange;
+  display: inline-block;
+  margin: 10px 0;
+  &:hover {
+    color: $colorOrange;
+  }
+}
+
+//content table
+
+.table-title {
+  background-color: #003333;
+  color: #ffffff;
+  text-align: center;
+  padding: 6px 0;
+  a {
+    color: #ffffff;
+  }
+  h4{
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+.table-league {
+  .table-head {
+    padding: 6px 0;
+    font-weight: bold;
+  }
+  .item {
+    border-bottom: 1px solid #E4E4E4;
+    padding: 6px 0;
+    a {
+      color: #333333;
+      &:hover {
+        color: #333333;
+      }
+    }
+    .ticket {
+      text-align: center;
+      font-size: 0.8rem;
+      padding: 2px 4px;
+      text-decoration: none;
+      border: none;
+      margin: 1px;
+      &.red {
+        background-color: #FF3900;
+        color: #ffffff;
+      }
+      &.yellow {
+        background-color: #FEDA3C;
+        color: #333333;
+      }
+    }
+  }
+  .label_link {
+    border-radius: 4px;
+    padding: 2px 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background: transparent;
+      color: #290011;
+    }
+    &.orange {
+      background-color: $colorOrange;
+      color: $colorWhite;
+    }
+  }
+}
+
+//game
+.game-info-details {
+  margin-left : 8rem;
+  margin-bottom: 1rem;
+}
+.game {
+  .nav-pills {
+    .nav-link {
+      width: 20%;
+      text-align: center;
+    }
+  }
+}
+
+//categories
+.categories-letter {
+  background-color: #d2d2d2;
+  padding: 5px 0;
+}
+.categories{
+  .item {
+    margin: 5px 0;
+    a {
+      color: #333333;
+      padding: 3px 0;
+      display: inline-block;
+      &:hover {
+        color: #333333;
+      }
+    }
+  }
+}
+//team
+.team {
+  a {
+    color: #212529;
+  }
+}
+
+  //footer
+.footer-wrap {
+  width: 100%;
+  height: 230px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.footer {
+  height: 80px;
+  background-color: #003333;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+//baner
+.advertising-footer-wrap {
+  height: 150px;
+  display: block;
+}
+.advertising {
+  ins {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: red;
+  }
+}
+@media (min-width: 200px) {
+  .wrapper {
+    padding-bottom: 120px;
+  }
+  .footer-wrap {
+    height: 110px;
+    .advertising-footer-wrap {
+      height: 30px;
+      .advertising-footer {
+        height: 30px;
+      }
+    }
+  }
+  .advertising  {
+    height: 20px;
+  }
+}
+@media (min-width: 576px) {
+  .wrapper {
+    padding-bottom: 130px;
+  }
+  .footer-wrap {
+    height: 120px;
+    .advertising-footer-wrap {
+      height: 40px;
+      .advertising-footer {
+        height: 40px;
+      }
+    }
+  }
+  .advertising  {
+    height: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    padding-bottom: 160px;
+  }
+  .footer-wrap {
+    height: 150px;
+    .advertising-footer-wrap {
+      height: 70px;
+      .advertising-footer {
+        height: 70px;
+      }
+    }
+  }
+  .advertising {
+    height: 60px;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper {
+    padding-bottom: 180px;
+  }
+  .footer-wrap {
+    height: 170px;
+    .advertising-footer-wrap {
+      height: 90px;
+      .advertising-footer {
+        height: 90px;
+      }
+    }
+  }
+  .advertising {
+    height: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    padding-bottom: 200px;
+  }
+  .footer-wrap {
+    height: 180px;
+    .advertising-footer-wrap {
+      height:110px;
+      .advertising-footer {
+        height: 110px;
+      }
+    }
+  }
+  .advertising {
+    height: 100px;
+  }
+}
+
+//govnophone
+@media (max-width: 768px) {
+  html, body {
+    font-size: 12px;
+  }
+  .container_header {
+    height: auto;
+    text-align: center;
+  }
+  .date-picker-wrap {
+    text-align: center;
+  }
+  .table-league {
+    font-size: 0.8rem;
+    .item {
+      padding: 4px 0;
+      align-items: center;
+      .ticket {
+        font-size: 0.7rem;
+        padding: 1px 2px;
+      }
+    }
+  }
+  table.table {
+    tr{
+      td{
+        padding: 2px;
+      }
+    }
+  }
+  .game-info-details {
+    margin-left : 0;
+  }
+  .game {
+    .nav-pills {
+      .nav-link {
+        width: auto;
+      }
+    }
+  }
+  .categories{
+    .item {
+      margin: 5px 0;
+      a {
+        padding: 5px 10px;
+        display: inline-block;
+        text-transform: uppercase;
+        &:hover {
+          color: #333333;
+        }
+      }
+    }
+  }
+  .table-overflow {
+    overflow: scroll ;
+  }
+  .footer {
+    p{
+      font-size: 0.8rem;
+    }
+  }
+}

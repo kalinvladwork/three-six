@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>League</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/icon/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/icon/favicons/favicon-16x16.png" sizes="16x16">
+</head>
+<body>
+<div class="wrapper">
+
+    <header class="container-fluid container_header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-5 col-md-4 col-lg-3 col-xl-4">
+                    <a href="#" class="navbar-brand">
+                        <img src="img/logo.png" alt="logo" title="logo">
+                    </a>
+                    <a href="#" class="header-live">Live</a>
+                    <a href="#" class="header-live">League</a>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-6 col-xl-4 text-center">
+                    <div class="header-date">
+                        01 Jul 2018
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 col-md-4 col-lg-3 col-xl-4 date-picker-wrap">
+                    <div class="date-picker">
+                        <a href="#" class="arrow prev">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </a>
+                        <a class="date-picker-day">
+                            23 <br>
+                            MO
+                        </a>
+                        <a class="date-picker-day active">
+                            24 <br>
+                            tu
+                        </a>
+                        <a class="date-picker-day">
+                            25 <br>
+                            we
+                        </a>
+                        <a href="#" class="arrow next">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 embed-responsive advertising">
+            <ins></ins>
+        </div>
+    </div>
+    <div class="row nav-day">
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <a href="#">Yesterday Soccer Scores</a>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <a href="#" class="active">Today Soccer Scores</a>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <a href="#">Tomorrow Soccer Scores</a>
+        </div>
+    </div>
+
+    <div class="row categories-letter">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+            <h5>Afghanistan</h5>
+        </div>
+    </div>
+
+    <div class="row search-wrapper">
+        <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+            <form class="row">
+                <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                    <input class="form-control" type="text" placeholder="Team Name">
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <button type="submit" class="btn btn-primary submit form-control">Search</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 text-right">
+            <a href="#" class="refresh">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+                Refresh
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container table-league">
+    <div class="row table-head">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            Status
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            Time
+        </div>
+        <div class="col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+            Teams
+        </div>
+        <div class="d-none d-sm-block col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            Score/Predictions
+        </div>
+
+        <!--можно удалить,  для отображения на говнофонах, при наличии разных переводов для говнофонов и нормальных девайсов-->
+        <!--в предыдущий блок поставить класс col-3 и удалить первые два-->
+
+        <div class="d-block d-sm-none col-3">
+            Score/Pred
+        </div>
+        <!--вот до сюда-->
+
+
+    </div>
+    <div class="row table-title">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <a href="#"><h4>La Liga</h4></a>
+        </div>
+    </div>
+    <div class="row item">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            Finished
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            12:23
+        </div>
+        <div class="col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+            <a href="#">C.S.D. Comunicacione </a> - <br class="d-block d-sm-none">
+            <a href="#">Borussia Monchenglad</a>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <a href="#" class="game-info">1:1</a>
+        </div>
+    </div>
+    <div class="row item">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <span class="color-orange">Live</span>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <span class="color-orange">64'</span>
+        </div>
+        <div class="col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+            <a href="#">C.S.D. Comunicacione</a> - <br class="d-block d-sm-none">
+            <a href="#">Borussia Monchenglad</a>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <a href="#" class="game-info color-orange">2:1 (1:1)</a>
+        </div>
+    </div>
+    <div class="row item">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            Finished
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            12:23
+        </div>
+        <div class="col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+            <a href="#">C.S.D. Comunicacione</a>
+            <span class="yellow ticket">4</span>
+            <span class="red ticket">3</span> - <br class="d-block d-sm-none">
+            <a href="#">Borussia Monchenglad</a>
+            <span class="yellow ticket">4</span>
+            <span class="red ticket">3</span>
+
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <a class="label_link orange">Pred</a>
+        </div>
+    </div>
+    <div class="row item">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            Finished
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            12:23
+        </div>
+        <div class="col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+            <a href="#">C.S.D. Comunicacione</a>
+            <span class="yellow ticket">4</span>
+            <span class="red ticket">3</span> - <br class="d-block d-sm-none">
+            <a href="#">Borussia Monchenglad</a>
+            <span class="yellow ticket">4</span>
+            <span class="red ticket">3</span>
+
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <a class="label_link orange">Pred</a>
+        </div>
+    </div>
+    <div class="row item">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            Finished
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            12:23
+        </div>
+        <div class="col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+            <a href="#">C.S.D. Comunicacione</a>
+            <span class="yellow ticket">4</span>
+            <span class="red ticket">3</span> - <br class="d-block d-sm-none">
+            <a href="#">Borussia Monchenglad</a>
+            <span class="yellow ticket">4</span>
+            <span class="red ticket">3</span>
+
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <a class="label_link orange">Pred</a>
+        </div>
+    </div>
+    <div class="row item">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <span class="color-orange">Live</span>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <span class="color-orange">64'</span>
+        </div>
+        <div class="col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+            <a href="#">C.S.D. Comunicacione</a> - <br class="d-block d-sm-none">
+            <a href="#">Borussia Monchenglad</a>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <a href="#" class="game-info color-orange">2:1 (1:1)</a>
+        </div>
+    </div>
+    <div class="row item">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <span class="color-orange">Live</span>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <span class="color-orange">64'</span>
+        </div>
+        <div class="col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+            <a href="#">C.S.D. Comunicacione</a> - <br class="d-block d-sm-none">
+            <a href="#">Borussia Monchenglad</a>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <a href="#" class="game-info color-orange">2:1 (1:1)</a>
+        </div>
+    </div>
+    <div class="row item">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <span class="color-orange">Live</span>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <span class="color-orange">64'</span>
+        </div>
+        <div class="col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+            <a href="#">C.S.D. Comunicacione</a> - <br class="d-block d-sm-none">
+            <a href="#">Borussia Monchenglad</a>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <a href="#" class="game-info color-orange">2:1 (1:1)</a>
+        </div>
+    </div>
+    <div class="row item">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <span class="color-orange">Live</span>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <span class="color-orange">64'</span>
+        </div>
+        <div class="col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+            <a href="#">C.S.D. Comunicacione</a> - <br class="d-block d-sm-none">
+            <a href="#">Borussia Monchenglad</a>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <a href="#" class="game-info color-orange">2:1 (1:1)</a>
+        </div>
+    </div>
+    <div class="row item">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            Finished
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            12:23
+        </div>
+        <div class="col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+            <a href="#">C.S.D. Comunicacione </a> - <br class="d-block d-sm-none">
+            <a href="#">Borussia Monchenglad</a>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <a href="#" class="game-info">1:1 (1:0; 0:1)</a>
+        </div>
+    </div>
+    <div class="row item">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            Finished
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            12:23
+        </div>
+        <div class="col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+            <a href="#">C.S.D. Comunicacione </a> - <br class="d-block d-sm-none">
+            <a href="#">Borussia Monchenglad</a>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <a href="#" class="game-info">1:1 (1:0; 0:1)</a>
+        </div>
+    </div>
+    <div class="row item">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            Finished
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            12:23
+        </div>
+        <div class="col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+            <a href="#">C.S.D. Comunicacione </a> - <br class="d-block d-sm-none">
+            <a href="#">Borussia Monchenglad</a>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <a href="#" class="game-info">1:1 (1:0; 0:1)</a>
+        </div>
+    </div>
+    <div class="row item">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            Finished
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            12:23
+        </div>
+        <div class="col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+            <a href="#">C.S.D. Comunicacione </a> - <br class="d-block d-sm-none">
+            <a href="#">Borussia Monchenglad</a>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <a href="#" class="game-info">1:1 (1:0; 0:1)</a>
+        </div>
+    </div>
+    <div class="row item">
+        <div class="d-none d-sm-block col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            Finished
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            12:23
+        </div>
+        <div class="col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+            <a href="#">C.S.D. Comunicacione </a> - <br class="d-block d-sm-none">
+            <a href="#">Borussia Monchenglad</a>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+            <a href="#" class="game-info">1:1 (1:0; 0:1)</a>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 col-lg-12 col-xl-12 text-right">
+            <a href="#" class="refresh">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+                Refresh
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer-wrap">
+    <div class="container advertising-footer-wrap">
+        <div class="row ">
+            <div class="col-12 embed-responsive advertising advertising-footer">
+                <ins></ins>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-xl-12">
+                    <p class="m-3">© Free WinnerScore web site, livescore today Football Predictions, Soccer Predictions, Score live, Soccer results, Live football scores, Latest football scores 2018 winnerscore.biz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+
+
+</body>
+</html>
